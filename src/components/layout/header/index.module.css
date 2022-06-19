@@ -1,9 +1,156 @@
+/*Header Start */
 .header {
     width: 100%;
-    height: 4pc;
-    background: #61dafb;
+    height: 6.25pc;
+    background: #75B9BE;
     display: flex;
-    box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px, rgb(0, 0, 0) 0 3px 7px -3px;
     overflow: hidden;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
+
+/*Header Input Start*/
+
+.headerInputArea {
+    display: flex;
+    background: #A8CCC9;
+    transition: 2s;
+    width: 8vw;
+    height: 0.5pc;
+    border-radius: 0 0 0.625rem 0.625rem;
+}
+.headerInputArea input {
+    width: 100%;
+    height: 100%;
+    padding: 0.625pc;
+    background: transparent;
+    font-size: 1.5rem;
+}
+
+.AreaActive {
+    transition: 4s;
+    width: 80vw;
+    height: 2pc;
+}
+
+/*Header Input End*/
+/*Header Search*/
+.headerSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0.625pc;
+    background: #F1E3E4;
+    cursor: pointer;
+    transition: 2s;
+    width: 8vw;
+    height: 2pc;
+    border-radius: 2.625rem 2.625rem 0 0;
+}
+
+.searchActive {
+    transition: 2s;
+    width: 40vw;
+    height: 2pc;
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.headerSearch svg {
+    font-size: 24px;
+    color: #1C1D21;
+}
+
+.headerSearch:hover svg {
+     color: #383A42;
+
+ }
+/*Header Search End*/
+
+/*Header Mobile Start */
+@media screen and (max-width: 690px){
+    .headerInputArea {
+        width: 12vw;
+        height: 0.5pc;
+    }
+    .headerSearch {
+        width: 12vw;
+        height: 2pc;
+    }
+
+    .searchActive {
+        width: 40vw;
+        height: 2pc;
+    }
+
+    .AreaActive {
+        width: 80vw;
+        height: 2pc;
+    }
+}
+@media screen and (max-width: 450px){
+    .headerInputArea {
+        width: 22vw;
+        height: 0.5pc;
+    }
+    .headerSearch {
+        width: 22vw;
+        height: 2pc;
+    }
+
+    .searchActive {
+        width: 40vw;
+        height: 2pc;
+    }
+
+    .AreaActive {
+        width: 80vw;
+        height: 2pc;
+    }
+}
+@media screen and (max-width: 275px){
+    .headerInputArea {
+        width: 23vw;
+        height: 0.5pc;
+    }
+    .headerSearch {
+        width: 23vw;
+        height: 2pc;
+    }
+
+    .searchActive {
+        width: 40vw;
+        height: 2pc;
+    }
+
+    .AreaActive {
+        width: 80vw;
+        height: 2pc;
+    }
+}
+@media screen and (max-width: 150px){
+    .headerInputArea {
+        width: 26vw;
+        height: 0.5pc;
+    }
+    .headerSearch {
+        width: 26vw;
+        height: 2pc;
+    }
+
+    .searchActive {
+        width: 40vw;
+        height: 2pc;
+    }
+
+    .AreaActive {
+        width: 80vw;
+        height: 2pc;
+    }
+}
+/*Header Mobile End */
+
+/*Header End*/

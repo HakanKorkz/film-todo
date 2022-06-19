@@ -1,11 +1,10 @@
-import {FaBeer} from "react-icons/fa";
-import Header from "./components/layout/header";
+import Home from "./pages/Home";
 
 function App() {
 
     return (
         <>
-            <Header/>
+            <Home />
         </>
     );
 }
