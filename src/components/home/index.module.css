@@ -1,8 +1,11 @@
-.main {
+.homeSection {
     background: #F1E3E4;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     height: 100%;
     font-size: 1.5rem;
+    margin: auto;
+    align-items: center;
+    justify-content: flex-start;
 }

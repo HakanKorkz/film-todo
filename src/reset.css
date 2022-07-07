@@ -7,11 +7,37 @@
     outline: 0;
     text-decoration: none;
 }
+/* scrollbar Özeleştirilmiş*/
+*::-webkit-scrollbar {
+    width: 2rem;
+    background: rgb(220 220 220 / 40%);
+}
+*::-webkit-scrollbar-track {
+    width: 0.2rem;
+    background: rgb(220 220 220 / 40%);
+}
+*::-webkit-scrollbar-thumb {
+    width: 0.5rem;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+
+    background: rgba(0, 0, 0, 0.18);
+}
+
+/* scrollbar Özeleştirilmiş*/
+
 
 
 html, body, #root {
     height: 100%;
     width: 100%;
+}
+
+body {
+    background: #F1E3E4;
 }
 
 #root {

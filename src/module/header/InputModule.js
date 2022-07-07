@@ -10,7 +10,6 @@ function InputModule(props) {
         display: 'none',
     };
     const InputActive = active ? ActiveStyle : PassiveStyle ;
-    console.log(InputActive)
     return (
         <div className={`${styles.headerInputArea} ${active && styles.AreaActive}`}>
             <input type="text" style={InputActive} placeholder="arama yap"/>
