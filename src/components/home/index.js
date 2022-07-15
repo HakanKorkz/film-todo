@@ -1,5 +1,5 @@
 import styles from './index.module.css'
-import FilmViews from "../element/FilmViews";
+import FilmViews from "components/element/FilmViews";
 
 function HomeComponent() {
     const movies = [
@@ -23,7 +23,6 @@ function HomeComponent() {
 
         }
     ]
-    console.log(movies)
     return (
         <section className={styles.homeSection}>
             {

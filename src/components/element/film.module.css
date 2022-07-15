@@ -2,7 +2,7 @@
     font-size: 2.0rem;
     margin-top: 2%;
     background: rgba(129, 127, 117, 0.2);
-    width: 100%;
+    width: 50%;
     height: auto;
     padding: 6px;
 }
@@ -12,7 +12,7 @@
 
 .filmPoster {
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -20,8 +20,6 @@
 }
 
 .filmPoster > img {
-    width: 100%;
-    height: 200px;
     background-size: 100% 100%;
     background: no-repeat center center fixed;
 }
@@ -65,4 +63,28 @@
 .filmInfo > .description {
     font-size: 1.5rem;
     flex: 1;
+    background: rgba(56, 58, 66, 0.4);
+    padding: 10px;
+    overflow: hidden;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: 1s;
+    height: 6vh;
+}
+.description > button {
+    width: 100%;
+    font-size: 100%;
+    margin-bottom: 2%;
+}
+
+.description > button:hover {
+    transition: background-color 500ms;
+    background: #cccaca;
+    cursor: pointer;
+}
+
+.filmInfo > .descriptionActive {
+    transition: height 1s;
+    height: 100%;
+    overflow: auto;
 }

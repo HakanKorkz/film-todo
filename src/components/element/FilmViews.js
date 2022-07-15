@@ -1,6 +1,11 @@
+import { useAutoAnimate } from '@formkit/auto-animate/react'
+import {useState} from "react";
 import styles from './film.module.css'
 
+
 function FilmViews(props) {
+    const [desActive, setDesActive] = useState(false);
+    const [animationParent] = useAutoAnimate()
     return (
         <div className={styles.filmContainer}>
             <div className={styles.filmPoster}>
@@ -19,11 +24,12 @@ function FilmViews(props) {
                                {`Yönetmen: ${props.director}`}
                            </span>
                             {
-                               
+
                             }
                         </div>
                     </div>
-                    <div className={styles.description}>
+                    <div className={`${styles.description} ${desActive && styles.descriptionActive } `} ref={animationParent}>
+                       <button onClick={()=> setDesActive(!desActive)}>Özet/Konusu { desActive ? "Göster"  : "Gizle" }</button>
                         {
                             props.description
                         }
