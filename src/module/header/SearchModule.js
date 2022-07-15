@@ -1,15 +1,16 @@
 import styles from "../../components/layout/header/index.module.css";
 import {ImSearch} from "react-icons/im";
 
-function SearchModule(props) {
-    let active = props.active
-    const searchClick = (ev) => {
-        active = ev
-        return active;
+function SearchModule({searchToggle, setSearchToggle}) {
+    let active = searchToggle
+    const searchClick = () => {
+        active = !searchToggle
+        setSearchToggle(active)
     }
 
     return (
-        <div className={`${styles.headerSearch} ${searchClick(active) && styles.searchActive}`} onClick={() => searchClick(active)}>
+        <div id={"bt"} className={`${styles.headerSearch} ${active && styles.searchActive}`}
+             onClick={() => searchClick()}>
             <ImSearch/>
         </div>
     );
