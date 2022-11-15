@@ -1,7 +1,7 @@
-import Header from "components/layout/header";
-import HomeComponent from "components/Home";
-import MainComponent from "components/element/MainComponent";
 import {useState} from "react";
+import Header from "../components/layout/header";
+import MainComponent from "../components/element/MainComponent";
+import HomeComponent from "../components/Home";
 
 function Home() {
    const [searchToggle,setSearchToggle] = useState(false)

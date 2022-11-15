@@ -1,7 +1,11 @@
 import styles from './index.module.css'
-import FilmViews from "components/element/FilmViews";
+import FilmViews from "../element/FilmViews";
+import posts from "../../services";
 
 function HomeComponent() {
+   const movie=posts("aa")
+    console.log(movie)
+    return  false
     const movies = [
         {
             "tittle": "Senden Bana Kalan",
